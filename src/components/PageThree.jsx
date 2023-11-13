@@ -115,6 +115,7 @@ const PageThree = ({ mainRef }) => {
         //   set start end according to preference
         start: `top top`,
         end: `100% top`,
+        pin: true,
         scroller: mainRef.current,
       },
       onUpdate: render,
@@ -148,9 +149,8 @@ const PageThree = ({ mainRef }) => {
     }
     ScrollTrigger.create({
       trigger: page3Ref.current,
-      pin: true,
+      // pin: true,
       scroller: mainRef.current,
-
       start: `top top`,
       end: `100% top`,
     });

@@ -13,8 +13,8 @@ const IndividualCharacters = ({ char }) => {
     gsap.to(text.current, {
       scrollTrigger: {
         trigger: text.current,
-        start: "bottom+=1000% bottom-=100",
-        end: "bottom+=1000% bottom-=250",
+        start: "bottom+=10% bottom-=100",
+        end: "bottom+=10% bottom-=250",
         scrub: 0.5,
         // markers: true,
       },
