@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useCallback, useLayoutEffect, useRef } from "react";
 import styles from "./PageThree.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,7 +7,7 @@ const PageThree = ({ mainRef }) => {
   const canvasRef = useRef(null);
   const page3Ref = useRef(null);
 
-  const initiateCanvas = () => {
+  const initiateCanvas = useCallback(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
 
@@ -154,12 +154,12 @@ const PageThree = ({ mainRef }) => {
       start: `top top`,
       end: `100% top`,
     });
-  };
+  }, [mainRef, page3Ref]);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     initiateCanvas();
-  }, []);
+  }, [initiateCanvas]);
 
   return (
     <div className={styles.page_three} ref={page3Ref}>
