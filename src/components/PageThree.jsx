@@ -158,7 +158,6 @@ const PageThree = ({ mainRef }) => {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
     initiateCanvas();
   }, []);
 
