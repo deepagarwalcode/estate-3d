@@ -40,7 +40,7 @@ const PageFour = () => {
   return (
     <div className={styles.page_four}>
       <p className={styles.small_head}>
-        CONNECT THE BUILDING'S TWIN TO YOUR STAKEHOLDERS
+        CONNECT THE BUILDING&apos;S TWIN TO YOUR STAKEHOLDERS
       </p>
       <h1 className={styles.big_para}>
         {textArray.map((char, index) => (

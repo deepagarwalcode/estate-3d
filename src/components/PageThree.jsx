@@ -7,7 +7,7 @@ const PageThree = ({ mainRef }) => {
   const canvasRef = useRef(null);
   const page3Ref = useRef(null);
 
-  const useCanvas = () => {
+  const initiateCanvas = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
 
@@ -159,7 +159,7 @@ const PageThree = ({ mainRef }) => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    useCanvas();
+    initiateCanvas();
   }, []);
 
   return (
