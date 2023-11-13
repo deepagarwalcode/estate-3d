@@ -1,0 +1,34 @@
+.page_four{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1137CA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8vw;
+}
+
+.small_head{
+    color: white;
+    font-size: 1.6rem;
+    text-align: left;
+    width: 100%;
+}
+
+.big_para{
+    /* color: black; */
+    font-size: 3.2vw;
+    line-height: 4.8vw;
+    font-weight: 400;
+    margin-top: 1.6vw;
+    letter-spacing: -2px;
+}
+
+.characterSpan{
+    color: white;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.2s;
+}

@@ -1,0 +1,73 @@
+.page_five {
+  position: relative;
+  width: 100vw;
+  padding: 8vw 0;
+  background-color: #151515;
+  color: white;
+  padding-bottom: 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 6vw;
+  padding: 0 8vw;
+
+  line-height: 8vw;
+  letter-spacing: -4px;
+}
+
+.button {
+  padding: 1vw 1.6vw;
+  background-color: #1137ca;
+  border-radius: 10vw;
+  color: white;
+
+  width: max-content;
+  margin: 4vw 8vw;
+  margin-bottom: 6vw;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  padding: 3.2vw 8vw;
+  letter-spacing: -2px;
+  font-size: 2.4vw;
+  font-weight: 400;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.5px solid rgb(48, 48, 48);
+  position: relative;
+  cursor: pointer;
+}
+
+.link > p {
+  position: relative;
+  z-index: 10;
+}
+
+.icon {
+  font-size: 2vw;
+  position: relative;
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1137ca;
+  transition: all ease 0.5s;
+}
+
+.link:hover .overlay {
+  height: 100%;
+  background-color: #1137ca;
+}
